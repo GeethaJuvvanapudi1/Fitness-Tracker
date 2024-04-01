@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Body Fat Reduction and Diet Tips</title>
+<link rel="stylesheet" href="fullbody.css"/>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Full Body Fat Reduction and Diet Tips</h1>
+  </header>
+  
+  <section>
+    <h2>Full Body Fat Reduction Tips</h2>
+    <p>1. Incorporate cardio exercises: Include activities like running, cycling, or swimming to burn calories and reduce overall body fat.</p>
+    <p>2. Strength training: Lift weights or perform bodyweight exercises to build muscle, which can increase metabolism and aid in fat loss.</p>
+    <p>3. HIIT workouts: High-intensity interval training (HIIT) is effective for burning calories and improving cardiovascular health.</p>
+    <p>4. Stay consistent: Make exercise a regular part of your routine, aiming for at least 150 minutes of moderate-intensity exercise per week.</p>
+    <p>5. Get enough sleep: Lack of sleep can disrupt hormone levels and increase cravings for unhealthy foods, so aim for 7-9 hours of quality sleep per night.</p>
+  </section>
+  
+  <section>
+    <h2>Diet Tips</h2>
+    <p>1. Eat a balanced diet: Include a variety of foods from all food groups, focusing on lean proteins, whole grains, fruits, and vegetables.</p>
+    <p>2. Control portion sizes: Be mindful of portion sizes to avoid overeating, and use smaller plates to help control portions.</p>
+    <p>3. Limit processed foods: Minimize your intake of processed and packaged foods high in added sugars, unhealthy fats, and empty calories.</p>
+    <p>4. Stay hydrated: Drink plenty of water throughout the day to stay hydrated and avoid mistaking thirst for hunger.</p>
+    <p>5. Plan meals ahead: Prepare healthy meals and snacks in advance to avoid relying on convenience foods when you're hungry.</p>
+  </section>
+</div>
+<div class="slideshow-container">
+    <!-- Only one image will be displayed at a time, they will be switched by JavaScript -->
+    <img class="image" src="full01.gif" alt="gif"/>
+    <img class="image" src="full02.gif" alt="gif"/>
+    <img class="image" src="full03.gif" alt="gif"/>
+    <img class="image" src="full04.gif" alt="gif"/>
+    <img class="image" src="full05.gif" alt="gif"/>
+    <!-- Additional GIFs can be added here with the same class name 'image' -->
+    
+    <span class="next" onclick="nextSlide()">Next &#10095;</span>
+</div>
+
+
+<script>
+var currentSlide = 0;
+var slides = document.querySelectorAll(".image");
+
+function nextSlide() {
+  // Hide the current slide
+  slides[currentSlide].style.display = "none";
+
+  // Move to the next slide
+  currentSlide++;
+
+  // Reset to the first slide if the end is reached
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  // Display the next slide
+  slides[currentSlide].style.display = "block";
+}
+
+// Initial call to show the first slide
+slides[currentSlide].style.display = "block";
+</script>
+
+
+</body>
+</html>

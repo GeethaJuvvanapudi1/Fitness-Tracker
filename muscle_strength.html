@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body Flexibility and Diet Tips</title>
+<link rel="stylesheet" href="flexibility.css"/>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>Body Flexibility and Diet Tips</h1>
+  </header>
+  
+  <section>
+    <h2>Body Flexibility Tips</h2>
+    <p>1. Stretch daily: Spend at least 10-15 minutes stretching every day to maintain flexibility.</p>
+    <p>2. Practice yoga or Pilates: These exercises are excellent for improving flexibility and strength.</p>
+    <p>3. Incorporate dynamic stretching: Warm up with dynamic stretches like arm circles, leg swings, and hip rotations.</p>
+    <p>4. Stay hydrated: Drinking plenty of water helps keep muscles and joints supple.</p>
+    <p>5. Listen to your body: Pay attention to any discomfort during stretching and avoid pushing yourself too hard.</p>
+  </section>
+  
+  <section>
+    <h2>Diet Tips</h2>
+    <p>1. Eat plenty of fruits and vegetables: Aim to fill half your plate with colorful fruits and veggies at every meal.</p>
+    <p>2. Include lean protein: Incorporate sources of lean protein such as chicken, fish, tofu, and beans into your meals.</p>
+    <p>3. Limit processed foods: Minimize your intake of processed and packaged foods high in added sugars, salt, and unhealthy fats.</p>
+    <p>4. Drink water: Stay hydrated by drinking plenty of water throughout the day. Avoid sugary drinks and excessive caffeine.</p>
+    <p>5. Practice portion control: Be mindful of portion sizes to avoid overeating, and listen to your body's hunger cues.</p>
+  </section>
+</div>
+<div class="slideshow-container">
+    <!-- Only one image will be displayed at a time, they will be switched by JavaScript -->
+    <img class="image" src="flex04.webp" alt="gif"/>
+    <img class="image" src="flex02.gif" alt="gif"/>
+    <img class="image" src="flex03.gif" alt="gif"/>
+    <img class="image" src="flex05.gif" alt="gif"/>
+    <!-- Additional GIFs can be added here with the same class name 'image' -->
+    
+    <span class="next" onclick="nextSlide()">Next &#10095;</span>
+</div>
+</section>
+
+<script>
+var currentSlide = 0;
+var slides = document.querySelectorAll(".image");
+
+function nextSlide() {
+  // Hide the current slide
+  slides[currentSlide].style.display = "none";
+
+  // Move to the next slide
+  currentSlide++;
+
+  // Reset to the first slide if the end is reached
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  // Display the next slide
+  slides[currentSlide].style.display = "block";
+}
+
+// Initial call to show the first slide
+slides[currentSlide].style.display = "block";
+</script>
+
+
+</body>
+</html>

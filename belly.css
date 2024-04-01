@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(170, 135, 141);
+} 
+h1{
+    text-align: center;
+    color: blue;
+}
+h2{
+    color: blue;
+}
+
+
+  
+  .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+     
+    }
+
+    .image {
+      display: none;
+      max-width: 100%;
+    }
+
+    .next {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hands and Thighs Fat Loss Tips</title>
+  <link rel="stylesheet" href="hands.css"/>
+</head>
+<body>
+  <header>
+    <h1>Hands and Thighs Fat Loss Tips</h1>
+  </header>
+  
+  <section class="content">
+    <h2>Introduction</h2>
+    <p>Losing fat from specific areas such as the hands and thighs requires a combination of targeted exercises and a balanced diet. Here are some tips to help you achieve your goals:</p>
+    
+    <h2>Exercises for Hands and Thighs</h2>
+    <p>Include the following exercises in your routine to target fat loss in the hands and thighs:</p>
+    <ul>
+      <li>Hand Exercises:
+        <ul>
+          <li>Push-ups: These help strengthen the muscles in your hands and arms.</li>
+          <li>Hand Grip Exercises: Squeezing a stress ball or using hand grippers can help tone the muscles in your hands.</li>
+          <li>Yoga: Poses like Downward-Facing Dog and Plank pose engage the hands and arms, helping to tone them.</li>
+        </ul>
+      </li>
+      <li>Thigh Exercises:
+        <ul>
+          <li>Squats: Squats target the thighs, glutes, and hamstrings, aiding in fat loss in the thigh area.</li>
+          <li>Lunges: Forward lunges and side lunges engage the thigh muscles, helping to tone and slim them down.</li>
+          <li>Cycling: Cycling is a great cardiovascular exercise that also works the thigh muscles.</li>
+        </ul>
+      </li>
+    </ul>
+    
+    <h2>Diet Tips</h2>
+    <p>Along with exercises, focus on a healthy diet to support fat loss in the hands and thighs. Here are some diet tips:</p>
+    <ul>
+      <li>Eat lean protein sources such as chicken breast, fish, tofu, and legumes to support muscle growth and repair.</li>
+      <li>Incorporate plenty of fruits and vegetables into your meals for essential vitamins, minerals, and fiber.</li>
+      <li>Avoid processed foods, sugary snacks, and high-fat foods, as they can contribute to weight gain and make it harder to lose fat in specific areas.</li>
+      <li>Stay hydrated by drinking plenty of water throughout the day. Water helps with digestion, metabolism, and overall body function.</li>
+      <li>Limit your intake of alcohol and sugary beverages, as they can add empty calories to your diet.</li>
+    </ul>
+    
+    <p>By combining targeted exercises with a balanced diet, you can effectively reduce fat in the hands and thighs and achieve a leaner, toned appearance.</p>
+  </section>
+  <div class="slideshow-container">
+    <!-- Only one image will be displayed at a time, they will be switched by JavaScript -->
+    <img class="image" src="hands1.gif" alt="gif"/>
+    <img class="image" src="hands2.gif" alt="gif"/>
+    <img class="image" src="hands3.jpg" alt="gif"/>
+    <img class="image" src="hands4.gif" alt="gif"/>
+    <img class="image" src="hands5.gif" alt="gif"/>
+    <!-- Additional GIFs can be added here with the same class name 'image' -->
+    
+    <span class="next" onclick="nextSlide()">Next &#10095;</span>
+</div>
+
+
+<script>
+var currentSlide = 0;
+var slides = document.querySelectorAll(".image");
+
+function nextSlide() {
+  // Hide the current slide
+  slides[currentSlide].style.display = "none";
+
+  // Move to the next slide
+  currentSlide++;
+
+  // Reset to the first slide if the end is reached
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  // Display the next slide
+  slides[currentSlide].style.display = "block";
+}
+
+// Initial call to show the first slide
+slides[currentSlide].style.display = "block";
+</script>
+
+</body>
+</html>

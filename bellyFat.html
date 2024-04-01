@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BELLY FAT REDUCTION TIPS</title>
+  <link rel="stylesheet" href="belly.css"/>
+</head>
+<body>
+ 
+  <section class="content">
+    <h1>DIET TIPS TO REDUCE BELLY FAT</h1>
+    <ul>
+      <li>Eat plenty of soluble fiber: Foods rich in soluble fiber include oats, legumes, fruits, and vegetables. Soluble fiber may help reduce belly fat by increasing fullness and reducing calorie absorption.</li>
+      <li>Avoid sugar-sweetened beverages: Sugary drinks like soda and fruit juices can contribute to belly fat. Opt for water, unsweetened tea, or coffee instead.</li>
+      <li>Limit refined carbs: Minimize your intake of refined carbohydrates like white bread, pastries, and processed foods. These foods can lead to spikes in blood sugar and increase belly fat.</li>
+      <li>Include healthy fats in your diet: Choose sources of healthy fats such as avocados, nuts, seeds, and olive oil. These fats can help you feel full and may reduce belly fat.</li>
+      <li>Stay hydrated: Drinking plenty of water throughout the day can help boost metabolism and reduce feelings of hunger, aiding in weight loss.</li>
+    </ul>
+    
+    <h2>Sample Belly Fat Reduction Meal Plan</h2>
+    <ul>
+      <li>Breakfast: Oatmeal topped with berries and almonds</li>
+      <li>Lunch: Grilled chicken salad with mixed greens, tomatoes, cucumbers, and avocado</li>
+      <li>Snack: Greek yogurt with sliced fruits</li>
+      <li>Dinner: Baked salmon with quinoa and steamed vegetables</li>
+    </ul>
+    <h2>Here Some workouts For Loosing BellyFat</h2>
+    
+    <div class="slideshow-container">
+        <!-- Only one image will be displayed at a time, they will be switched by JavaScript -->
+        <img class="image" src="01.gif" alt="gif"/>
+        <img class="image" src="02.gif" alt="gif"/>
+        <img class="image" src="03.gif" alt="gif"/>
+        <img class="image" src="04.gif" alt="gif"/>
+        <!-- Additional GIFs can be added here with the same class name 'image' -->
+        
+        <span class="next" onclick="nextSlide()">Next &#10095;</span>
+    </div>
+  </section>
+
+  <script>
+    var currentSlide = 0;
+    var slides = document.querySelectorAll(".image");
+
+    function nextSlide() {
+      // Hide the current slide
+      slides[currentSlide].style.display = "none";
+
+      // Move to the next slide
+      currentSlide++;
+
+      // Reset to the first slide if the end is reached
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+
+      // Display the next slide
+      slides[currentSlide].style.display = "block";
+    }
+
+    // Initial call to show the first slide
+    slides[currentSlide].style.display = "block";
+  </script>
+</body>
+
+</html>
